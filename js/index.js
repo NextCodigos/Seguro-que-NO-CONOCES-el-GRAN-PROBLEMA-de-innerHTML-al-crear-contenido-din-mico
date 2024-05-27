@@ -1,10 +1,10 @@
-const CAJA=document.querySelector(".caja");
+const CAJA = document.querySelector(".caja");
 
-CAJA.innerHTML+=`<button>Aceptar</button>`;
-document.querySelector("button").addEventListener("click",saludar);
-CAJA.innerHTML+=`<button>Cancelar</button>`;
-document.querySelectorAll("button")[1].addEventListener("click",saludar);
+for (let k = 0; k < 10; k++) {
+  CAJA.innerHTML += `<button>Cancelar</button>`;
+  document.querySelectorAll("button")[k].addEventListener("click", saludar);
+}
 
-function saludar(){
-       alert("Hola");
+function saludar() {
+  alert("Hola");
 }
